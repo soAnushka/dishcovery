@@ -24,20 +24,21 @@ Dishcovery is a React + Vite web app that helps you find meal recipes based on i
 ```sh
 npm install
 ```
-Development
+### Development
 ```sh
 npm run dev
 ```
 Open http://localhost:5173 in your browser.
 
-Build
+### Build
 ```sh
 npm run build
 ```
-Preview Production Build
+### Preview Production Build
 ```sh
 npm run preview
 ```
+### Project Structure
 ```sh
 dishcovery/
   src/
@@ -49,9 +50,9 @@ dishcovery/
     [index.css](http://_vscodecontentref_/2)        # Styles
   public/            # Static assets
 ```
-Technologies
-  React
-  Vite
-  Tailwind CSS
-  TheMealDB API
+### Technologies
+- React
+- Vite
+- Tailwind CSS
+- TheMealDB API
 
