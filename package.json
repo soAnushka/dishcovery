@@ -10,7 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "pluralize": "^8.0.0",
     "react": "^19.1.1",
+    "react-autosuggest": "^10.1.0",
     "react-dom": "^19.1.1"
   },
   "devDependencies": {

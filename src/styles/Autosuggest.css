@@ -1,0 +1,71 @@
+/* 🔽 Container that holds the dropdown list */
+.react-autosuggest__suggestions-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 16rem; /* matches w-64 input */
+  background: #fff0f6; /* soft pink background */
+  border: 1px solid #f9a8d4; /* Tailwind pink-300 */
+  border-radius: 0.75rem; /* rounded-xl */
+  margin-top: 0.25rem;
+  box-shadow: 0 6px 12px rgba(244, 114, 182, 0.2); /* subtle pink shadow */
+  z-index: 50;
+  font-family: "Poppins", ui-sans-serif, system-ui;
+
+  /* New scrollable rules */
+  max-height: 40vh; /* limit dropdown height */
+  overflow-y: auto; /* scrollable if content exceeds height */
+  scrollbar-width: none; /* Firefox hide scrollbar */
+  -ms-overflow-style: none; /* IE/Edge hide scrollbar */
+
+  opacity: 0;
+  transform: translateY(-5px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* Hide scrollbar for Webkit (Chrome/Safari/Edge) */
+.react-autosuggest__suggestions-container::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+/* 🔽 Show when open */
+.react-autosuggest__suggestions-container--open {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 🔽 Hide when empty */
+.react-autosuggest__suggestions-container--hidden {
+  display: none;
+}
+
+/* 🔽 Reset list style */
+.react-autosuggest__suggestions-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* 🔽 Each suggestion */
+.react-autosuggest__suggestion {
+  padding: 0.6rem 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #4a044e; /* deep purple-pink text */
+  border-bottom: 1px solid #fbcfe8; /* Tailwind pink-200 divider */
+}
+
+/* 🔽 Remove last border */
+.react-autosuggest__suggestion:last-child {
+  border-bottom: none;
+}
+
+/* 🔽 Hover or arrow-key highlight */
+.react-autosuggest__suggestion--highlighted {
+  background: #f9a8d4; /* Tailwind pink-300 */
+  color: #fff; /* white text on highlight */
+  border-radius: 0.5rem;
+}
