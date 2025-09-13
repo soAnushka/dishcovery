@@ -1,12 +1,53 @@
-# React + Vite
+# 🍳 Dishcovery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Discover, cook, and enjoy — one ingredient at a time.
 
-Currently, two official plugins are available:
+Dishcovery is a React + Vite web app that helps you find meal recipes based on ingredients you have. Search by ingredient, get surprise meal ideas, and view detailed recipes with instructions and ingredients.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Ingredient Search:** Find meals by entering one or more ingredients.
+- **Surprise Me:** Get a random meal suggestion.
+- **Recipe Details:** View ingredients, instructions, and images for each meal.
+- **Responsive UI:** Works great on desktop and mobile.
+- **Modern Stack:** Built with React, Vite, and Tailwind CSS.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18+ recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+```sh
+npm install
+
+Development
+npm run dev
+
+Open http://localhost:5173 in your browser.
+
+Build
+npm run build
+
+Preview Production Build
+npm run preview
+
+dishcovery/
+  src/
+    components/      # UI components
+    contexts/        # React context providers
+    hooks/           # Custom React hooks
+    [App.jsx](http://_vscodecontentref_/0)          # Main app component
+    [main.jsx](http://_vscodecontentref_/1)         # Entry point
+    [index.css](http://_vscodecontentref_/2)        # Styles
+  public/            # Static assets
+
+Technologies
+  React
+  Vite
+  Tailwind CSS
+  TheMealDB API
+
