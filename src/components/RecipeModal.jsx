@@ -72,32 +72,30 @@ function RecipeModal({ meal, isOpen, onClose }) {
           ✕
         </button>
 
-        {/* Scrollable content */}
-        <div
-          className="overflow-auto p-6 max-h-[90vh] scrollbar-hide modal-scroll text-justify"
-          style={{
-            scrollbarWidth: "none",
-          }}
-        >
-          <style>
-            {`
-              .modal-scroll::-webkit-scrollbar {
+            <div
+              className="overflow-auto p-6 max-h-[90vh] scrollbar-hide modal-scroll text-justify"
+              style={{
+                scrollbarWidth: "none",
+              }}
+            >
+              <style>
+                {`
+                  .modal-scroll::-webkit-scrollbar {
                 display: none;
-              }
-            `}
-          </style>
+                  }
+                `}
+              </style>
 
-          {/* Meal Image with glass overlay */}
-          <div className="relative w-full overflow-hidden rounded-2xl mb-6 shadow-lg">
-            <img
-              src={meal.strMealThumb}
-              alt={meal.strMeal}
-              className="w-full h-64 object-cover transition-transform duration-300 hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-white bg-opacity-20 backdrop-blur-sm"></div>
-          </div>
+              {/* Meal Image */}
+              <div className="relative w-full overflow-hidden rounded-2xl mb-6 shadow-lg">
+                <img
+                  src={meal.strMealThumb}
+                  alt={meal.strMeal}
+                  className="w-full h-64 object-cover transition-transform duration-300 hover:scale-105"
+                />
+              </div>
 
-          {/* Meal Details */}
+              {/* Meal Details */}
           <div className="space-y-6 text-gray-800">
             <h2 className="text-3xl font-extrabold text-pink-700">{meal.strMeal}</h2>
 
